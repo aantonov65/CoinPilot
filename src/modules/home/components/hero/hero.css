@@ -75,6 +75,7 @@
   transition: 300ms all;
   border-radius: 50%;
   animation: pulse-blue 2s infinite;
+  -webkit-appearance: none;
 }
 
 .hero .chevron-down:hover {
