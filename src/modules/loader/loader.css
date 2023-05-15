@@ -1,6 +1,8 @@
 .loader {
   max-width: 120px;
+  width: 120px;
   max-height: 120px;
+  height: 120px;
   margin: 0 auto;
   background-color: #fff;
   border: 10px solid #2d2dc4;
