@@ -12,10 +12,12 @@ const Hero = () => {
         <Content />
         <h2>explore more</h2>
         <HashLink smooth to="/#market">
-          <FontAwesomeIcon
-            className="chevron-down"
-            icon={faCircleChevronDown}
-          />
+          <div className="animation-wrapper">
+            <FontAwesomeIcon
+              className="chevron-down"
+              icon={faCircleChevronDown}
+            />
+          </div>
         </HashLink>
         <span className="desc">
           track, analyze, and stay updated on the cryptocurrency market

@@ -66,6 +66,13 @@
   cursor: pointer;
 }
 
+.hero .animation-wrapper {
+  width: 46px;
+  margin: 0 auto;
+  border-radius: 50%;
+  animation: pulse-blue 2s infinite;
+}
+
 .hero .chevron-down {
   display: block;
   margin: 0 auto;
@@ -74,9 +81,6 @@
   color: #2d2dc4;
   transition: 300ms all;
   border-radius: 50%;
-  -webkit-border-radius: 50%;
-  animation: pulse-blue 2s infinite;
-  -webkit-appearance: none;
 }
 
 .hero .chevron-down:hover {
@@ -244,6 +248,10 @@
 
   .hero .chevron-down {
     font-size: 38px;
+  }
+
+  .hero .animation-wrapper {
+    width: 38px;
   }
 
   .hero .chevron-down:hover {
