@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed";
+  scroll-behavior: smooth;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.price-up {
+  color: #2da952;
+}
+
+.price-down {
+  color: #d23f3f;
+}
+
+.coin-tag {
+  margin-left: 0.25rem;
+  color: #989898;
+  text-transform: uppercase;
+}
+
+.error-message {
+  color: #000;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 2rem 0;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 1rem 0;
+}

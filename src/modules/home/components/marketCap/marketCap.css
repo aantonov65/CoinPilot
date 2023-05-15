@@ -1,0 +1,82 @@
+.market-cap {
+  display: grid;
+  place-items: center end;
+  padding: 4rem;
+  text-align: center;
+  background-color: #2d2dc4;
+  color: #fff;
+  background-image: url(../../../../assets/images/market-cap-bg.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.market-cap-container {
+  margin-right: 16rem;
+}
+
+.market-cap h2 {
+  margin-bottom: 0.75rem;
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.market-cap-chart {
+  margin: 1.5rem 0 0 auto;
+  height: 480px;
+  width: 480px;
+}
+
+/* Media Queries */
+/* Full HD */
+@media (min-width: 1920px) {
+  .market-cap {
+    background-color: #2d2dc4;
+    background-image: none;
+    place-items: center center;
+    padding: 3rem 0;
+  }
+
+  .market-cap-container {
+    margin: 0 auto;
+  }
+}
+
+/* Medium */
+@media only screen and (max-width: 1230px) {
+  .market-cap {
+    background-color: #2d2dc4;
+    background-image: none;
+    place-items: center center;
+  }
+
+  .market-cap-container {
+    margin: 0 auto;
+  }
+}
+
+/* Small */
+@media only screen and (max-width: 768px) {
+  .market-cap-chart {
+    margin: 0 auto;
+    height: 420px;
+    width: 420px;
+  }
+}
+
+/* X-Small */
+@media (max-width: 575px) {
+  .market-cap {
+    padding: 2rem;
+  }
+
+  .market-cap h2 {
+    font-size: 1.85rem;
+  }
+
+  .market-cap-chart {
+    height: 260px;
+    width: 260px;
+  }
+}
