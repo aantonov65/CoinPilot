@@ -4,7 +4,6 @@ import { Pie } from "react-chartjs-2";
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 const PieChart = ({ globalData }) => {
-  //Chart Setup
   const options = {
     responsive: true,
     plugins: {

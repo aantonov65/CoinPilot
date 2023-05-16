@@ -3,11 +3,11 @@ const CoinStats = ({ coin = {} }) => {
     <div className="coin-stats">
       <div>
         <div>
-          24h High
+          24h High:
           <span className="price-up">${coin.market_data.high_24h.usd}</span>
         </div>
         <div>
-          24h Low
+          24h Low:
           <span className="price-down">${coin.market_data.low_24h.usd}</span>
         </div>
       </div>

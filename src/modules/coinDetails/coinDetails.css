@@ -139,6 +139,7 @@
 /* Small */
 @media only screen and (max-width: 768px) {
   .coin-container {
+    margin-top: 0.75rem;
     padding: 1rem;
   }
   .chart-column {

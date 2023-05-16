@@ -9,6 +9,7 @@ import {
   LineElement,
   Title,
   Tooltip,
+  Filler,
   Legend,
 } from "chart.js";
 import { Line } from "react-chartjs-2";
@@ -21,6 +22,7 @@ ChartJS.register(
   LineElement,
   Title,
   Tooltip,
+  Filler,
   Legend
 );
 
@@ -28,17 +30,13 @@ const LineChart = () => {
   const params = useParams();
   const [chartDataResponse, setChartDataResponse] = useState({});
   const apiUrl = `https://api.coingecko.com/api/v3/coins/${params.coinId}/market_chart?vs_currency=usd&days=30`;
-  const chartData = chartDataResponse.prices?.map((value) => ({
-    x: value[0],
-    y: value[1].toFixed(2),
-  }));
 
+  //API Call
   useEffect(() => {
     axios
       .get(apiUrl)
       .then((response) => {
         setChartDataResponse(response.data);
-        console.log(response.data);
       })
       .catch((error) => {
         console.log(error);
@@ -46,6 +44,11 @@ const LineChart = () => {
   }, [apiUrl]);
 
   //Chart Setup
+  const chartData = chartDataResponse.prices?.map((value) => ({
+    x: value[0],
+    y: value[1].toFixed(2),
+  }));
+
   const options = {
     responsive: true,
   };
@@ -54,6 +57,7 @@ const LineChart = () => {
     labels: chartData?.map((value) => moment(value.x).format("MMM DD HH:mm")),
     datasets: [
       {
+        fill: true,
         label:
           params.coinId.charAt(0).toUpperCase() +
           params.coinId.slice(1) +
