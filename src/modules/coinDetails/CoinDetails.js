@@ -24,10 +24,8 @@ const CoinDetails = () => {
   }, [apiUrl]);
 
   return (
-    <div className="center">
-      <div className="coin-container">
-        <Content isLoading={isLoading} coin={coin} />
-      </div>
+    <div className="coin-container">
+      <Content isLoading={isLoading} coin={coin} />
     </div>
   );
 };
