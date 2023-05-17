@@ -25,4 +25,8 @@ nav img {
   nav {
     position: unset;
   }
+
+  nav img {
+    width: 150px;
+  }
 }
